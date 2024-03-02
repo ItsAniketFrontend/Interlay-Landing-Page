@@ -170,10 +170,10 @@ nav button a {
   }
 }
 .types .img1 {
-  background-image: url("/Images/inline-kitchen.jpg");
+  background-image: url("../Images/inline-kitchen.jpg");
 }
 .types .img2 {
-  background-image: url("/Images/L-shape.jpg");
+  background-image: url("../Images/L-shape.jpg");
 }
 .types .img3 {
   background-image: url("../Images/Island-kitchen.jpg");
