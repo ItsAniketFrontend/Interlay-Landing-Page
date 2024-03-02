@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Outfit-Light;
+    src: url(../Fonts/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: Outfit-ExtraLight;
+    src: url(../Fonts/Outfit-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Outfit-Medium;
+    src: url(../Fonts/Outfit-Medium.ttf);
+}
+
+@font-face {
+    font-family: Outfit-SemiBold;
+    src: url(../Fonts/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(../Fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alata-Regular;
+    src: url(../Fonts/Alata-Regular.ttf);
+}
+
+
+nav{
+    background-color: #fff;
+    img{
+        height: 50px;
+    }
+    a{
+        color: #000 !important;
+        text-transform: capitalize;
+        font-family: Outfit-Medium;
+        font-size: 16px !important;
+    }
+    button{
+        background-color: #ed8e23;
+        border: none;
+        padding: 5px 10px;
+        a{
+            color: #fff !important;
+            text-decoration: none;
+        }
+    }
+}
+
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-family: Alata-Regular;
+            font-size: 52px;
+            color: #ed8e23;
+            font-weight: 900;
+            @media (max-width:774px) {
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-family: Outfit-Regular;
+            text-align: center;
+            color: #fff;
+            @media (max-width:774px) {
+                font-size: 16px;
+            }
+        }
+        button{
+            background-color: #ed8e23;
+            border: none;
+            padding: 5px 10px;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-family: Outfit-Medium;
+                text-transform: uppercase;
+                
+            }
+        }
+    }
+}
+
+.about-me{
+    background-color: #f5f5f5;
+    h6{
+        font-family: Alata-Regular;
+        font-weight: bold;
+        font-size: 16px;
+        color: #ed8e23;
+    }
+    h2{
+        font-family: Alata-Regular;
+        color: #000;
+        font-size: 32px;
+    }
+    p{
+        font-size: 16px;
+        font-family: Outfit-Light;
+
+    }
+    button{
+        background-color: #ed8e23;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        a{
+            text-decoration: none;
+            color: #ffff;
+            font-family: Outfit-Medium;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.types{
+    h6{
+        color: #ed8e23;
+        font-family: Outfit-Medium;
+        font-weight: bold;
+    }
+    h2{
+        font-family: Alata-Regular;
+        font-size: 32px;
+    }
+    p{
+        font-family: Outfit-Light;
+        font-size: 18px;
+    }
+    .img-accordion {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        cursor: pointer;
+
+        @media (max-width:772px) {
+            flex-direction: column;
+        }
+    }
+
+    .img {
+        flex: 1;
+        height: 100%;
+        border: none;
+        // transform: skew(5deg);
+        margin: 0 2px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        transition: all 0.3s;
+
+        @media (max-width:772px) {
+            margin: 10px 0px;
+        }
+    }
+
+    .img1 {
+        background-image: url("/Images/inline-kitchen.jpg");
+    }
+
+    .img2 {
+        background-image: url("/Images/L-shape.jpg");
+    }
+
+    .img3 {
+        background-image: url("../Images/Island-kitchen.jpg");
+    }
+
+    .img4 {
+        background-image: url("../Images/parallel.jpg");
+    }
+
+    .img5 {
+        background-image: url("../Images/U-shape.jpg");
+    }
+
+    .img6 {
+        background-image: url("../Images/peninsular-kitchen.jpg");
+    }
+
+    .img p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #ed8e23;
+        padding: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Outfit-Semibold;
+        white-space: nowrap;
+        font-size: 16px;
+        transform: rotate(-90deg);
+
+        @media (max-width:776px) {
+            transform: rotate(0deg);
+        }
+
+        transform-origin: 0 0;
+        transition: all 0.3s;
+    }
+    .img:hover {
+        flex: 5;
+    }
+
+    .img:hover p {
+        transform: rotate(0);
+        background-color: #ed8e23;
+        border: none;
+        color: #fff;
+    }
+}
+
+.gallery{
+    h6{
+        color: #ed8e23;
+        text-align: center;
+        font-family: Outfit-Medium;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 32px;
+        font-family: Alata-Regular;
+    }
+    @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    .logos {
+        overflow: hidden;
+        padding: 0 0;
+        white-space: nowrap;
+        position: relative;
+      }
+      
+      
+      .logos-slide {
+        display: inline-block;
+        animation: 25s slide infinite linear;
+      }
+      
+      .logos-slide img {
+        height: 350px;
+        @media (max-width:774px) {
+            height: 280px;
+        }
+        margin: 0 4px;
+      }
+}
