@@ -61,7 +61,7 @@ nav button a {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .banner .container h1 {
@@ -79,7 +79,6 @@ nav button a {
 .banner .container p {
   font-size: 18px;
   font-family: Outfit-Regular;
-  text-align: center;
   color: #fff;
 }
 @media (max-width: 774px) {
@@ -255,4 +254,54 @@ nav button a {
   .gallery .logos-slide img {
     height: 280px;
   }
+}
+
+.pricing {
+  background-color: #f5f5f5;
+}
+.pricing h2 {
+  font-family: Alata-Regular;
+  font-size: 32px;
+  text-align: center;
+}
+.pricing p {
+  font-family: Outfit-Light;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.pricing button {
+  background-color: #ed8e23;
+  padding: 5px 10px;
+  border: none;
+  margin-top: 5px;
+}
+.pricing button a {
+  color: #fff;
+  font-family: Outfit-Medium;
+  text-decoration: none;
+}
+
+.faq button {
+  background-color: #f5f5f5;
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: #f5f5f5;
+}
+.faq h2 {
+  font-family: Alata-Regular;
+  color: #000;
+  font-size: 32px;
+}
+.faq p {
+  font-family: Outfit-Regular;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #f5f5f5;
+}
+footer a {
+  font-family: Oufit-Medium;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
