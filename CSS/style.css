@@ -59,7 +59,7 @@ nav button a {
 }
 @media (max-width: 774px) {
   .banner {
-    height: 410px;
+    height: 350px;
   }
 }
 .banner .container {
