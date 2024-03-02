@@ -72,7 +72,7 @@ nav button a {
 }
 @media (max-width: 774px) {
   .banner .container h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 .banner .container p {
@@ -82,7 +82,7 @@ nav button a {
 }
 @media (max-width: 774px) {
   .banner .container p {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 .banner .container button {
@@ -261,13 +261,23 @@ nav button a {
 .pricing h2 {
   font-family: Alata-Regular;
   font-size: 32px;
-  text-align: center;
+  text-align: justify;
+}
+@media (max-width: 776px) {
+  .pricing h2 {
+    font-size: 28px;
+  }
 }
 .pricing p {
   font-family: Outfit-Light;
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 0px;
+}
+@media (max-width: 776px) {
+  .pricing p {
+    font-size: 16px;
+  }
 }
 .pricing button {
   background-color: #ed8e23;
